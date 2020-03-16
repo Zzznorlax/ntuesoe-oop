@@ -1,6 +1,6 @@
 
 public class IsLeapYear {
-    public boolean determine(final int year) {
+    public boolean determine(int year) {
         if (year % 400 == 0) {
             return true; // exactly divisible by 400 is a leap year
         } else if (year % 100 == 0) {
