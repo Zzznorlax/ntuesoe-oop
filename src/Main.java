@@ -31,6 +31,18 @@ public class Main {
         System.out.println(gc.calPopulation(6, 15));
         System.out.println(gc.calPopulation(10, 17));
         System.out.println(gc.calPopulation(3, 20));
+
+        // prob. 4
+        System.out.println("====== prob. 4 SentenceProcessor ======");
+        SentenceProcessor sp = new SentenceProcessor();
+
+        assert sp.removeDuplicatedWords("Hello Hello World I love love the World I lovelove the World") == "Hello World I love the lovelove";
+        System.out.println(sp.removeDuplicatedWords("Hello Hello World I love love the World I lovelove the World"));
+        System.out.println(sp.removeDuplicatedWords("Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo"));
+        System.out.println(sp.removeDuplicatedWords("a a la a la carte A la La carte Carte A a la la"));
+        System.out.println(sp.replaceWord("major", "minor", "The major problem is how to sing in A major"));
+        System.out.println(sp.replaceWord("on", "off", "Turn on the television I want to keep the television on"));
+        System.out.println(sp.replaceWord("love", "hate", "I love the World I lovelove the Love"));
     }
 
 }
