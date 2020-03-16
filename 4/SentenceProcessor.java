@@ -5,9 +5,9 @@ public class SentenceProcessor {
 
     public String removeDuplicatedWords(String sentence) {
 
-        String[] words = sentence.split(" ");
+        String[] words = sentence.split(" ");  // splits sentence into words with " "
         String processedSentence = "";
-        List<String> tempWords = new ArrayList<>();
+        List<String> tempWords = new ArrayList<>();  // list used to save not duplicated words
 
         for (int i = 0; i < words.length; i++) {
 
@@ -19,7 +19,7 @@ public class SentenceProcessor {
         for (int i = 0; i < tempWords.size(); i++) {
             if (i == 0) {
                 processedSentence += tempWords.get(i);
-            } else {
+            } else {  // if not first word, add a " "
                 processedSentence += " " + tempWords.get(i);
             }
         }
@@ -39,7 +39,7 @@ public class SentenceProcessor {
                 } else {
                     processedSentence += replacement;
                 }
-            } else {
+            } else {  // if not first word, add a " "
                 if (!words[i].equals(target)) {
                     processedSentence += " " + words[i];
                 } else {
