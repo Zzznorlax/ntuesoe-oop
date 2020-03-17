@@ -146,8 +146,9 @@ public class Pizza {
      *
      * @return a string showing the information of the pizza.
      */
+    @Override
     public String toString() {
-        return String.format("size = %s, numberOfCheese = %d, numOfPepperoni = %d, numOfHam = %d", this.size,
+        return String.format("size = %s, numOfCheese = %d, numOfPepperoni = %d, numOfHam = %d", this.size,
                 this.numberOfCheese, this.numberOfPepperoni, this.numberOfHam);
     }
 
