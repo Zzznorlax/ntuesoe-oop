@@ -61,8 +61,7 @@ public class Main {
         System.out.println(pizza.getNumberOfPepperoni());
         System.out.println(pizza.getNumberOfHam());
         System.out.println(pizza.calcCost());
-        System.out.println(pizza.toString());
-        assert pizza.toString() == "size = medium, numOfCheese = 2, numOfPepperoni = 4, numOfHam = 1";
+        System.out.println(pizza.toString().equals("size = medium, numOfCheese = 2, numOfPepperoni = 4, numOfHam = 1"));
         System.out.println(pizza.equals(new Pizza("large", 2, 4, 1)));
         System.out.println(pizza.equals(new Pizza()));
         System.out.println(pizza.equals(new Pizza("medium", 2, 4, 1)));
