@@ -43,6 +43,29 @@ public class Main {
         System.out.println(sp.replaceWord("major", "minor", "The major problem is how to sing in A major"));
         System.out.println(sp.replaceWord("on", "off", "Turn on the television I want to keep the television on"));
         System.out.println(sp.replaceWord("love", "hate", "I love the World I lovelove the Love"));
+
+        // prob. 5
+        System.out.println("====== prob. 5 Pizza ======");
+        Pizza pizza = new Pizza("large", 3, 1, 5);
+        System.out.println(pizza.getSize());
+        System.out.println(pizza.getNumberOfCheese());
+        System.out.println(pizza.getNumberOfPepperoni());
+        System.out.println(pizza.getNumberOfHam());
+        pizza = new Pizza();
+        pizza.setSize("medium");
+        pizza.setNumberOfCheese(2);
+        pizza.setNumberOfPepperoni(4);
+        pizza.setNumberOfHam(1);
+        System.out.println(pizza.getSize());
+        System.out.println(pizza.getNumberOfCheese());
+        System.out.println(pizza.getNumberOfPepperoni());
+        System.out.println(pizza.getNumberOfHam());
+        System.out.println(pizza.calcCost());
+        System.out.println(pizza.toString());
+        assert pizza.toString() == "size = medium, numOfCheese = 2, numOfPepperoni = 4, numOfHam = 1";
+        System.out.println(pizza.equals(new Pizza("large", 2, 4, 1)));
+        System.out.println(pizza.equals(new Pizza()));
+        System.out.println(pizza.equals(new Pizza("medium", 2, 4, 1)));
     }
 
 }
