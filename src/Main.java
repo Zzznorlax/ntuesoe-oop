@@ -9,11 +9,13 @@ public class Main {
 
         // prob. 1
         System.out.println("====== prob. 1 APlusB ======");
+
         int answer = APlusB.plus(10, 2);
         System.out.println(answer);
 
         // prob. 2
         System.out.println("====== prob. 2 IsLeapYear ======");
+
         IsLeapYear ily = new IsLeapYear();
         System.out.println(ily.determine(400));
         System.out.println(ily.determine(200));
@@ -22,6 +24,7 @@ public class Main {
 
         // prob. 3
         System.out.println("====== prob. 3 GreenCrud ======");
+
         GreenCrud gc = new GreenCrud();
         System.out.println(gc.calPopulation(10, 1));
         System.out.println(gc.calPopulation(10, 5));
@@ -34,9 +37,11 @@ public class Main {
 
         // prob. 4
         System.out.println("====== prob. 4 SentenceProcessor ======");
+
         SentenceProcessor sp = new SentenceProcessor();
 
-        assert sp.removeDuplicatedWords("Hello Hello World I love love the World I lovelove the World") == "Hello World I love the lovelove";
+        assert sp.removeDuplicatedWords(
+                "Hello Hello World I love love the World I lovelove the World") == "Hello World I love the lovelove";
         System.out.println(sp.removeDuplicatedWords("Hello Hello World I love love the World I lovelove the World"));
         System.out.println(sp.removeDuplicatedWords("Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo"));
         System.out.println(sp.removeDuplicatedWords("a a la a la carte A la La carte Carte A a la la"));
@@ -46,6 +51,7 @@ public class Main {
 
         // prob. 5
         System.out.println("====== prob. 5 Pizza ======");
+
         Pizza pizza = new Pizza("large", 3, 1, 5);
         System.out.println(pizza.getSize());
         System.out.println(pizza.getNumberOfCheese());
@@ -65,6 +71,25 @@ public class Main {
         System.out.println(pizza.equals(new Pizza("large", 2, 4, 1)));
         System.out.println(pizza.equals(new Pizza()));
         System.out.println(pizza.equals(new Pizza("medium", 2, 4, 1)));
+
+        // prob. 6
+        System.out.println("====== prob. 6 Pizza Order ======");
+
+        Pizza pizza1 = new Pizza("large", 1, 0, 1);
+        Pizza pizza2 = new Pizza("medium", 2, 2, 5);
+        Pizza pizza3 = new Pizza();
+        PizzaOrder order = new PizzaOrder();
+        System.out.println(order.setNumberPizzas(5));
+        order.setNumberPizzas(2);
+        order.setPizza1(pizza1);
+        order.setPizza2(pizza2);
+        System.out.println(order.calcTotal());
+        order.setNumberPizzas(3);
+        order.setPizza1(pizza1);
+        order.setPizza2(pizza2);
+        order.setPizza3(pizza3);
+        System.out.println(order.calcTotal());
+
     }
 
 }
