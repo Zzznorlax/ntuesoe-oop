@@ -134,8 +134,7 @@ public class SimpleArrayList {
                 remove(i);
             }
         }
-
-        return originalArrayList != this.arrayList;
+        return !Arrays.equals(this.arrayList, originalArrayList);
     }
 
     /**
