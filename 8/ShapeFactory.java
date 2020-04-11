@@ -4,6 +4,12 @@ public class ShapeFactory {
         Triangle, Circle, Square
     }
 
+    /**
+     * Creates instance of all shapes refer to 𝚃𝚢𝚙𝚎 parameter.
+     * @param shapeType The shape's type.
+     * @param length The length of the shape.
+     * @return A instance of the shape.
+     */
     public Shape createShape(ShapeFactory.Type shapeType, double length) {
         if (shapeType == ShapeFactory.Type.Triangle) {
             Triangle triangle = new Triangle(length);
