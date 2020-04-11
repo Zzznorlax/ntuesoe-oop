@@ -3,6 +3,10 @@ import java.text.DecimalFormat;
 public abstract class Shape {
     protected double length;
 
+    public Shape() {
+        this.length = 0;
+    }
+
     public abstract void setLength(double length);
 
     public abstract double getArea();
