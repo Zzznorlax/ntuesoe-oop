@@ -4,6 +4,10 @@ public class Triangle extends Shape {
         super();
     }
 
+    public Triangle(double length) {
+        super(length);
+    }
+
     @Override
     public void setLength(double length) {
         super.length = length;

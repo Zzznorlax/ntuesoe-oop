@@ -4,6 +4,10 @@ public class Circle extends Shape {
         super();
     }
 
+    public Circle(double length) {
+        super(length);
+    }
+
     @Override
     public void setLength(double length) {
         super.length = length;
