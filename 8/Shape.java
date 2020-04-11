@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 
 public abstract class Shape {
     protected double length;
@@ -9,7 +10,8 @@ public abstract class Shape {
     public abstract double getPerimeter();
 
     public String getInfo() {
-        return String.format("Area = %.2f, Perimeter = %.2f", this.getArea(), this.getPerimeter()) ;
+        DecimalFormat outputDoubleFormat = new DecimalFormat("0.0#");
+        return String.format("Area = %s, Perimeter = %s", outputDoubleFormat.format(this.getArea()), outputDoubleFormat.format(this.getPerimeter())) ;
     }
 
 }
