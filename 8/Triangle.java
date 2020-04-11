@@ -1,8 +1,8 @@
 
 public class Triangle extends Shape {
-    public Triangle() {
-        super();
-    }
+    // public Triangle() {
+    //     super();
+    // }
 
     public Triangle(double length) {
         super(length);

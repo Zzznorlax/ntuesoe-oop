@@ -1,8 +1,8 @@
 
 public class Circle extends Shape {
-    public Circle() {
-        super();
-    }
+    // public Circle() {
+    //     super();
+    // }
 
     public Circle(double length) {
         super(length);
