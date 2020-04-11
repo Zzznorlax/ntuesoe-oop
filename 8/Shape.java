@@ -7,9 +7,9 @@ public abstract class Shape {
         this.length = 0;
     }
 
-    // public Shape(double length) {
-    //     this.length = length;
-    // }
+    public Shape(double length) {
+        this.length = length;
+    }
 
     public abstract void setLength(double length);
 
