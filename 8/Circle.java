@@ -1,5 +1,9 @@
 
 public class Circle extends Shape {
+    public Circle() {
+        super.length = 0;
+    }
+
     @Override
     public void setLength(double length) {
         super.length = length;

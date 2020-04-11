@@ -1,5 +1,9 @@
 
 public class Triangle extends Shape {
+    public Triangle() {
+        super.length = 0;
+    }
+
     @Override
     public void setLength(double length) {
         super.length = length;
