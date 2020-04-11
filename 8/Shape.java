@@ -4,7 +4,7 @@ public abstract class Shape {
     protected double length;
 
     public Shape() {
-        super();
+        this.length = 0;
     }
 
     public Shape(double length) {
