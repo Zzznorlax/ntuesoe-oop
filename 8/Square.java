@@ -1,8 +1,8 @@
 
 public class Square extends Shape {
-    public Square() {
-        super();
-    }
+    // public Square() {
+    //     super();
+    // }
 
     public Square(double length) {
         super(length);
