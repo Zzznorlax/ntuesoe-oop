@@ -4,7 +4,11 @@ public abstract class Shape {
     protected double length;
 
     public Shape() {
-        this.length = 0;
+        super();
+    }
+
+    public Shape(double length) {
+        this.length = length;
     }
 
     public abstract void setLength(double length);
