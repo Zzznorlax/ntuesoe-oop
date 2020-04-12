@@ -100,8 +100,8 @@ public class SimpleCalculator {
      * @return If the input operator is valid.
      */
     private boolean isValidOperator(String operator) {
-        if (!operator.equals(plusOperator) || !operator.equals(minusOperator) || !operator.equals(multiplyOperator)
-                || !operator.equals(divideOperator)) {
+        if (operator.equals(plusOperator) || operator.equals(minusOperator) || operator.equals(multiplyOperator)
+                || operator.equals(divideOperator)) {
 
         } else {
             return false;
@@ -144,7 +144,7 @@ public class SimpleCalculator {
 
             } else if (!isValidOperator && isValidValue) {
                 throw new UnknownCmdException(String.format("%s is an unknown operator", cmdElements[0]));
-            } else if (isValidOperator && isValidValue) {
+            } else if (isValidOperator && !isValidValue) {
                 throw new UnknownCmdException(String.format("%s is an unknown value", cmdElements[1]));
             } else {
                 throw new UnknownCmdException(String.format("%s is an unknown operator and %s is an unknown value",
