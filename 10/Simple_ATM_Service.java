@@ -1,4 +1,7 @@
-
+/**
+ * Instead of here, All docstrings should be written at the interface's
+ * function declaration.
+ */
 public class Simple_ATM_Service implements ATM_Service {
 
     @Override
