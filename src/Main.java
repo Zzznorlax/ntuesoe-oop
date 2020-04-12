@@ -224,7 +224,9 @@ public class Main {
 
         // prob.9
         System.out.println("====== prob. 9 SimpleCalculator ======");
+
         SimpleCalculator cal = new SimpleCalculator();
+
         String cmd = null;
         System.out.println(cal.getMsg());
         String cmd_str = "+ 5,- 2,* 5,/ 3,% 2,* D,X D,XD,, ,/ 1000000,/ 00.000,/ 0.000001,+ 1 + 1,- 1.66633,r R,r";
@@ -240,6 +242,21 @@ public class Main {
             }
         }
         System.out.println(cal.getMsg());
+
+        // prob.10
+        System.out.println("====== prob. 10 ATM ======");
+
+        Account David = new Account(4000);
+
+        Simple_ATM_Service atm = new Simple_ATM_Service();
+        System.out.println("---- first withdraw ----");
+        atm.withdraw(David, 1000);
+        System.out.println("---- second withdraw ----");
+        atm.withdraw(David, 1000);
+        System.out.println("---- third withdraw ----");
+        atm.withdraw(David, 1001);
+        System.out.println("---- fourth withdraw ----");
+        atm.withdraw(David, 4000);
     }
 
 }
