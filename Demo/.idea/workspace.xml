@@ -10,8 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f71570d-439f-4b0b-a5de-90948cd7c3b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ntuesoeoop/progressproject/Progress.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ntuesoeoop/progressproject/Progress.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ntuesoeoop/progressproject/ProgressDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ntuesoeoop/progressproject/ProgressDatabase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ntuesoeoop/progressproject/CreateProgressFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ntuesoeoop/progressproject/CreateProgressFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ntuesoeoop/progressproject/FirstFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ntuesoeoop/progressproject/FirstFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ntuesoeoop/progressproject/ISODate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ntuesoeoop/progressproject/ISODate.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ntuesoeoop/progressproject/ProgressListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ntuesoeoop/progressproject/ProgressListAdapter.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
